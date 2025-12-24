@@ -1,3 +1,7 @@
+function closeGreeting() {
+  document.getElementById("greetingModal").style.display = "none";
+}
+
 // ==== SELECTORS ====
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
