@@ -1,0 +1,197 @@
+/* ===== Body ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+  text-align: center;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #d0ebff, #a5d8ff);
+  flex-wrap: wrap;
+}
+
+.header-left .logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.header-right h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.header-right .subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ===== Instruction Box ===== */
+.instruction-box {
+  background: #fff;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 85%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.instruction-box h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  text-align: center; 
+}
+.instruction-box h2::after {
+      content: "";
+      display: block;
+      width: 50%;      
+      height: 2px;     
+      background-color: #000; 
+      margin: 10px auto 0 auto; 
+    }
+
+    /* প্যারাগ্রাফ বামদিকে */
+    .instruction-box p {
+      text-align: left;   
+      margin: 10px 0;
+    }
+
+/* ===== Editor Section ===== */
+.editor-section {
+  margin: 15px auto;
+  max-width: 75%;
+}
+
+.canvas-wrap {
+  margin: 10px auto;
+  width: 100%;
+}
+
+canvas {
+  border: 1px solid #222;
+  max-width: 100%;
+  height: auto;
+  touch-action: none;
+  border-radius: 5px;
+}
+
+/* ===== Controls ===== */
+.controls {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.controls label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+input[type=range] {
+  width: 90%;
+  max-width: 200px;
+}
+
+/* Common button style */
+button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* subtle shadow */
+}
+
+/* Download button (blue) */
+#downloadBtn {
+  background-color: #1971c2;
+}
+
+#downloadBtn:hover {
+  background-color: #1864ab;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* hover shadow একটু বেশি */
+}
+
+/* Reset button (red) */
+#resetBtn {
+  background-color: #dc3545;
+}
+
+#resetBtn:hover {
+  background-color: #c82333;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* hover shadow একটু বেশি */
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: linear-gradient(135deg, #d0ebff, #a5d8ff);
+  padding: 12px 8px;
+  margin-top: 20px;
+}
+
+.footer-row {
+  display: flex;
+  width: 100%;
+}
+
+/* 🔥 দুই সমান ভাগ */
+.footer-half {
+  width: 50%;
+  display: flex;
+  justify-content: center; /* মাঝখানে */
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-pic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* 🔥 বড় label */
+.footer-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1c3d5a;
+}
+
+/* নাম */
+.footer-text a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0b5ed7;
+  text-decoration: none;
+}
+
+/* লোকেশন */
+.footer-text small {
+  font-size: 10px;
+  color: #555;
+}

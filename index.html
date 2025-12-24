@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPSB 24th Anniversary Photo Frame</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <img src="images/logo.png" alt="Logo" class="logo">
+  </div>
+  <div class="header-right">
+    <h1>বাংলাদেশ বিজ্ঞান জনপ্রিয়করণ সমিতি</h1>
+    <p class="subtitle">২৪ তম প্রতিষ্ঠাবার্ষিকী</p>
+  </div>
+</header>
+
+<!-- INSTRUCTION BOX -->
+<section class="instruction-box">
+  <h2>কিভাবে ছবি আপলোড এবং এডিট করবেন</h2>
+  <p>★ এই পাতাটি শুধুমাত্র বাংলাদেশ বিজ্ঞান জনপ্রিয়করণ সমিতির ২৪তম প্রতিষ্ঠাবার্ষিকী উপলক্ষে তৈরি করা হয়েছে। এখানে আপনি আপনার ছবি আপলোড করে প্রতিষ্ঠাবার্ষিকীর ফ্রেমসহ সংরক্ষণ করতে পারবেন। ছবিটি সঠিকভাবে সংরক্ষণ করতে অনুগ্রহ করে 
+<span style="color:red;">ক্রোম ব্রাউজার</span> 
+ব্যবহার করুন।</p>
+    <p>★ ফ্রেম সহ ছবি সংরক্ষণ করতে প্রথমে নিচের <img src="images/Choose file.jpg" alt="Choose file" style="height:24px; vertical-align:middle;"> বাটনে ক্লিক করে আপনার মোবাইল বা কম্পিউটার থেকে ছবি নির্বাচন করুন।</p>
+    <p>★ নির্বাচিত ছবিটি স্ক্রিনে দেখা গেলে আপনি হাতের আঙুল বা নিচের ফটো টুলগুলোর ব্যবহার করে প্রয়োজন অনুযায়ী ছবি টেনে সরাতে, জুম ইন/আউট করতে এবং ঘোরাতে পারবেন।</p>
+    <p>★ সব ঠিক থাকলে নিচের <img src="images/Download.jpg" alt="Download" style="height:24px; vertical-align:middle;">
+    বাটনে ক্লিক করে ফ্রেমসহ ছবিটি সংরক্ষণ করুন।
+</p>
+</section>
+<input type="file" id="upload" accept="image/*">
+<!-- FRAME EDITOR -->
+<section class="editor-section">
+  <select id="frameSelect">
+    <option value="Frames/test 2.png">SPSB Anniversary Frame</option>
+  </select>
+  <div class="canvas-wrap">
+    <canvas id="canvas" width="1080" height="1080"></canvas>
+  </div>
+  <div class="controls">
+    <label>Zoom</label>
+    <input type="range" id="zoomSlider" min="0.05" max="5" step="0.01" value="1"><br>
+    <label>Rotate</label>
+    <input type="range" id="rotateSlider" min="-180" max="180" value="0"><br>
+    <button id="resetBtn">Reset</button>
+<button id="downloadBtn">Download</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-row">
+
+    <!-- Frame By -->
+    <div class="footer-half">
+      <div class="footer-item">
+        <img src="images/nazmul.jpg" class="footer-pic">
+        <div class="footer-text">
+          <div class="footer-label">Frame by</div>
+          <a href="https://www.facebook.com/share/1CyxaHHtSw/" target="_blank">
+            নাজমুল হোসাইন
+          </a>
+          <small>ঢাকা, বাংলাদেশ</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Developed By -->
+    <div class="footer-half">
+      <div class="footer-item">
+        <img src="images/utsab.jpg" class="footer-pic">
+        <div class="footer-text">
+          <div class="footer-label">Developed by</div>
+          <a href="https://www.facebook.com/share/1G17Cra2ME/" target="_blank">
+            উৎসব সরকার
+          </a>
+          <small>ঢাকা, বাংলাদেশ</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
