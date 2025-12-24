@@ -75,21 +75,21 @@
 .popup-hint-box {
   display: inline-flex;
   align-items: center;
-  gap: 6px; /* icon-text gap */
-  margin: 10px auto 14px;
-  padding: 6px 12px;
+  gap: 4px;           /* icon-text gap */
+  margin: 6px auto 12px; /* ছবির নিচে ছোট margin */
+  padding: 4px 8px;   /* ছোট padding */
   width: fit-content;
   max-width: 90%;
-  background: #f1f3f5;
-  border-radius: 8px;
-  font-size: 0.75rem;
-  color: #555;
+  background: #f9f9f9;
+  border-radius: 6px;
+  font-size: 0.65rem; /* খুব ছোট লেখা */
+  color: #666;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12); /* subtle shadow */
 }
 
 .hint-icon {
-  font-size: 0.85rem;
+  font-size: 0.7rem;  /* ছোট icon */
   line-height: 1;
 }
 
